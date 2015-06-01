@@ -1,0 +1,42 @@
+Done. Now run 'make install'.
+make  unit
+make[1]: Entering directory `/home/steven/Programs/LibDejaGnu/build_dejagnu-1.5.3'
+/usr/bin/c++ -DPACKAGE_NAME=\"GNU\ DejaGnu\" -DPACKAGE_TARNAME=\"dejagnu\" -DPACKAGE_VERSION=\"1.5.3\" -DPACKAGE_STRING=\"GNU\ DejaGnu\ 1.5.3\" -DPACKAGE_BUGREPORT=\"bug-dejagnu@gnu.org\" -DPACKAGE_URL=\"http://www.gnu.org/software/dejagnu/\" -DPACKAGE=\"dejagnu\" -DVERSION=\"1.5.3\" -I. -I../dejagnu-1.5.3    -I../dejagnu-1.5.3 -g -g -O2 -MT unit.o -MD -MP -MF .deps/unit.Tpo -c -o unit.o `test -f 'testsuite/libdejagnu/unit.cc' || echo '../dejagnu-1.5.3/'`testsuite/libdejagnu/unit.cc
+mv -f .deps/unit.Tpo .deps/unit.Po
+/usr/bin/c++ -I../dejagnu-1.5.3 -g -g -O2   -o unit unit.o  
+make[1]: Leaving directory `/home/steven/Programs/LibDejaGnu/build_dejagnu-1.5.3'
+make  check-DEJAGNU
+make[1]: Entering directory `/home/steven/Programs/LibDejaGnu/build_dejagnu-1.5.3'
+Making a new site.exp file ...
+srcdir='../dejagnu-1.5.3'; export srcdir; \
+	EXPECT=/usr/bin/expect; export EXPECT; \
+	if /bin/sh -c "../dejagnu-1.5.3/runtest --version" > /dev/null 2>&1; then \
+	  exit_status=0; l='dejagnu'; for tool in $l; do \
+	    if ../dejagnu-1.5.3/runtest  --srcdir ../dejagnu-1.5.3/testsuite RUNTEST=../dejagnu-1.5.3/runtest ; \
+	    then :; else exit_status=1; fi; \
+	  done; \
+	else echo "WARNING: could not find '../dejagnu-1.5.3/runtest'" 1>&2; :;\
+	fi; \
+	exit $exit_status
+Test Run By steven on Mon Jun  1 10:28:09 2015
+Native configuration is x86_64-unknown-linux-gnu
+
+		===  tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using ../dejagnu-1.5.3/testsuite/../config/base-config.exp as tool-and-target-specific interface file.
+Using ../dejagnu-1.5.3/testsuite/config/default.exp as tool-and-target-specific interface file.
+Running ../dejagnu-1.5.3/testsuite/libdejagnu/tunit.exp ...
+Running ../dejagnu-1.5.3/testsuite/runtest.all/libs.exp ...
+Running ../dejagnu-1.5.3/testsuite/runtest.all/load_lib.exp ...
+Running ../dejagnu-1.5.3/testsuite/runtest.all/options.exp ...
+Running ../dejagnu-1.5.3/testsuite/runtest.all/stats-sub.exp ...
+Running ../dejagnu-1.5.3/testsuite/runtest.all/stats.exp ...
+
+		===  Summary ===
+
+# of expected passes		68
+make[1]: Leaving directory `/home/steven/Programs/LibDejaGnu/build_dejagnu-1.5.3'
